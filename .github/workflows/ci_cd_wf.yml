@@ -35,7 +35,7 @@ jobs:
           mv coverage.xml pytest-coverage.xml
 
       - name: Comment on pull request with Pytest coverage comment
-      uses: MishaKav/pytest-coverage-comment@main
-      with:
-        pytest-coverage-path: ./pytest-coverage.txt
-        junitxml-path: ./pytest.xml
+        uses: MishaKav/pytest-coverage-comment@main
+        with:
+          pytest-coverage-path: ./pytest-coverage.xml  # Corrected path
+          junitxml-path: ./pytest.xml
